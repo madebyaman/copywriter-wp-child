@@ -1,0 +1,187 @@
+/*
+ Theme Name:   Copywriter Theme Child
+ Description:  Copywriter Child Theme to tweak some settings.
+ Author:       Aman Thakur
+ Author URI:   http://madebyaman.com
+ Template:     copywriter-by-aman
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  copywriter-theme-child
+*/
+
+/*
+BLOG
+*/
+
+.blog-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.blog-home article {
+  margin-top: 0;
+}
+
+article:first-of-type {
+  margin-top: 0;
+}
+
+.single .highlight-wrapper > .section-inner {
+  display: grid;
+  align-items: center;
+}
+
+@media (min-width: 680px) {
+  .single .highlight-wrapper > .section-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.single-post .post-thumbnail {
+  margin: 0;
+  max-width: fit-content;
+}
+
+.blog-home .entry-title {
+  margin-bottom: 10px;
+}
+
+.single .entry-title::after {
+  content: "";
+  width: 50px;
+  margin: 20px 0 10px;
+  height: 2px;
+  background-color: #0093e9;
+  display: block;
+}
+
+.single .entry-meta {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  line-height: 2;
+  font-size: 14px;
+  border: 0;
+}
+
+@media (min-width: 680px) {
+  .blog .blog-home article.sticky {
+    grid-column: 1/-1;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.blog .blog-home article.sticky {
+  background: rgba(219, 234, 254, 0.6);
+}
+
+.blog .highlight-wrapper {
+  margin-bottom: -150px;
+  padding-bottom: 150px;
+}
+
+.blog-home .sticky .more-link {
+  padding: 12px 20px;
+  background-color: #0093e9;
+  color: white;
+  border: 1px solid #0093e9;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.blog-home .sticky .more-link:hover {
+  color: #0093e9;
+  background-color: white;
+}
+
+.blog-home .sticky .featured-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 680px) {
+  .blog-home .sticky .featured-content, 
+  .single .entry-header {
+    padding: 30px;
+  }
+}
+
+.blog .site-content,
+.home .site-content,
+.single-post .site-content {
+  margin-top: 0;
+}
+
+/*
+UTILITIES
+*/
+
+.more-link {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.highlight-wrapper {
+  background: rgba(249, 250, 251, 1);
+  padding: 20px 0;
+}
+
+.widget {
+  margin: 0 0 40px;
+}
+
+.site-footer {
+  margin-top: 75px;
+}
+
+/*
+TYPOGRAPHY
+*/
+
+h2 a {
+  color: #32373c;
+}
+
+h2 a:hover {
+  color: #0093e9;
+}
+
+.entry-meta,
+.entry-categories a {
+  text-transform: uppercase;
+}
+
+.entry-categories a {
+  color: rgb(64, 64, 64);
+  line-height: 1;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 0;
+}
+
+.entry-categories a:hover,
+.entry-categories a:hover,
+.entry-categories a:active {
+  border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+/*
+ENTRY HEADER, CONTENT
+*/
+
+.single .entry-header {
+  padding: 10px;
+}
+
+.single .entry-content {
+  margin-top: 40px;
+}
