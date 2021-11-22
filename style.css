@@ -3,12 +3,12 @@
  Description:  Copywriter Child Theme to tweak some settings.
  Author:       Aman Thakur
  Author URI:   http://madebyaman.com
- Template:     copywriter-by-aman
+ Template:     copywriter-wp
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  copywriter-theme-child
+ Text Domain:  copywriter-wp-child
 */
 
 /*
@@ -107,7 +107,7 @@ article:first-of-type {
 }
 
 @media (min-width: 680px) {
-  .blog-home .sticky .featured-content, 
+  .blog-home .sticky .featured-content,
   .single .entry-header {
     padding: 30px;
   }

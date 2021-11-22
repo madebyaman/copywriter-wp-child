@@ -34,17 +34,17 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 function copywriter_child_widgets_init()
 {
   register_sidebar([
-    'name'          => esc_html__('Front Page Widget', 'copywriter-theme-child'),
+    'name'          => esc_html__('Front Page Widget', 'copywriter-wp-child'),
     'id'            => 'front-widget',
-    'description'   => esc_html__('Add widgets for front page here', 'copywriter-theme-child'),
+    'description'   => esc_html__('Add widgets for front page here', 'copywriter-wp-child'),
     'before_widget' => '<section class="widget front-page-widgets content-inner">',
     'after_widget'  => '</section>',
   ]);
 
   register_sidebar([
-    'name'          => esc_html__('Footer Widget', 'copywriter-theme-child'),
+    'name'          => esc_html__('Footer Widget', 'copywriter-wp-child'),
     'id'            => 'footer-widget',
-    'description'   => esc_html__('Add widgets for footer section', 'copywriter-theme-child'),
+    'description'   => esc_html__('Add widgets for footer section', 'copywriter-wp-child'),
     'before_widget' => '<section class="widget footer-widgets content-inner">',
     'after_widget'  => '</section>',
   ]);
