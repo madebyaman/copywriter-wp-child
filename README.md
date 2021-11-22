@@ -2,7 +2,7 @@
 
 ## Installation
 
-- Head over to the [releases tab](https://github.com/madebyaman/copywriter-wp-child-theme/releases). This will download a zipped file of the theme on your computer.
+- Head over to the [releases tab](https://github.com/madebyaman/copywriter-wp-child/releases). This will download a zipped file of the theme on your computer.
 - In the WordPress Admin, click "Themes" and then "Upload a Theme".
 - Upload the zipped file
 - Active it and customize the theme to make it yours.
